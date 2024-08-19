@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('asdasd.gif'); /* Your GIF background */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.keyboard-container {
+    padding: 20px;
+    background-size: cover; /* Cover the container */
+    border-radius: 10px;
+}
+
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 5px;
+}
+
+.key-row {
+    display: contents;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, pink);
+    background-size: 200% 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    user-select: none;
+    animation: rgbWave 2s linear infinite;
+    text-align: center;
+    transition: background-color 1s;
+}
+
+@keyframes rgbWave {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.key:hover {
+    background-color: #555;
+}
+
+.space {
+    grid-column: span 6;
+}
+
+.backspace {
+    grid-column: span 2;
+}
+
+.tab, .capslock, .enter, .shift {
+    grid-column: span 2;
+}
+
+.ctrl, .alt, .win, .menu {
+    grid-column: span 1;
+}
