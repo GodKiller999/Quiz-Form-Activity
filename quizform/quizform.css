@@ -1,0 +1,22 @@
+body {
+  background-image: url('asdasd.gif'); /* Your GIF background */
+  background-size: cover;
+  display: flex;
+  color: #fff; /* white text color */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a subtle shadow to improve readability */
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ca0d0d; /* dark gray text color */
+  background-color: transparent; /* set background color to transparent */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+}
